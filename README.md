@@ -22,6 +22,6 @@ Update the Deliveroo domain in the `matches` array according to your country.
 
 ## Install on Chrome
 - Clone / Download this repository
-- Go to the extensions page chrome://extensions/
+- Go to the extensions page : chrome://extensions
 - Click on "Load unpacked"
 - Select the Mapsoo folder

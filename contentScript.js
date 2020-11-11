@@ -35,7 +35,7 @@ const observer = new IntersectionObserver((observables) => {
             chrome.runtime.sendMessage({ query: 'queryPlace', name: name, location: myLocation }, res => {
                 let resto = res?.candidates[0]
                 if (!resto) return
-                let cardList = observable.target.querySelector("div.HomeFeedUICard-15a8581a1528e2fd>ul")
+                let cardList = observable.target.querySelectorAll("ul")[1]
                 cardList.insertBefore(buildRating(resto.rating, resto.user_ratings_total), cardList.children[1]);
             });
         }

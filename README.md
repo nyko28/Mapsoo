@@ -1,4 +1,4 @@
-# Mapsoo
+# Mapsoo 🚴⭐
 Chrome extension to get Google Maps' ratings on Deliveroo
 
 ## Get an API key

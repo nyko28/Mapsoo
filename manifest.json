@@ -1,0 +1,31 @@
+{
+    "name": "Mapsoo",
+    "description": "Get Google Maps' ratings on Deliveroo",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "deliveroo.png"
+    },
+    "permissions": [
+        "https://maps.googleapis.com/"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://deliveroo.fr/fr/restaurants/*"
+            ],
+            "run_at": "document_idle",
+            "js": [
+                "geohash.js",
+                "contentScript.js"
+            ]
+        }
+    ]
+}

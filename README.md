@@ -9,7 +9,7 @@ Set `API_KEY` in `background.js`.
 
 ## Update the manifest
 Update the Deliveroo domain in the `matches` array according to your country.
-```json
+```jsonc
 "content_scripts": [
     {
         "matches": [
